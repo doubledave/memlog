@@ -6,7 +6,7 @@ echo press ctrl-c to stop logging.
 
 while [ : ]
 do
-  NOW=$(date +"$F $T")
+  NOW=$(date +"%F %T")
   echo $NOW
   echo $NOW >> $HOME/$LOGFILE
   free -h >> $HOME/$LOGFILE
